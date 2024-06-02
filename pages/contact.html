@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - MERN50: Master the Stack</title>
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Contact MERN50: Master the Stack</h1>
+    </header>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../pages/about.html">About</a>
+      <a href="../pages/blog.html">Blog</a>
+      <a href="../pages/contact.html">Contact</a>
+    </nav>
+    <div class="container">
+      <article>
+        <h2>Contact Us</h2>
+        <p>
+          If you have any questions, comments, or feedback, please feel free to
+          reach out. We'd love to hear from you!
+        </p>
+        <form action="contact_form_handler.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </article>
+    </div>
+    <footer>
+      <p>&copy; 2024 MERN50. All rights reserved.</p>
+      <p>
+        This website was built using technologies such as ChatGPT and GitHub
+        Copilot.
+      </p>
+    </footer>
+  </body>
+</html>
