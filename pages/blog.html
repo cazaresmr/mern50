@@ -4,46 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MERN50: Master the Stack - Blog</title>
-    <link rel="stylesheet" href="blog.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <header>
-      <h1>MERN50: Master the Stack</h1>
+  <body class="bg-gray-100 text-gray-900">
+    <header class="bg-gray-800 text-white py-4">
+      <h1 class="text-3xl text-center">MERN50: Master the Stack</h1>
     </header>
-    <nav>
-      <a href="../index.html">Home</a>
-      <a href="../pages/about.html">About</a>
-      <a href="../pages/blog.html">Blog</a>
-      <a href="../pages/contact.html">Contact</a>
+    <nav class="bg-gray-700 text-white p-4 text-center">
+      <a href="../index.html" class="mx-2 hover:underline">Home</a>
+      <a href="../pages/about.html" class="mx-2 hover:underline">About</a>
+      <a href="../pages/blog.html" class="mx-2 hover:underline">Blog</a>
+      <a href="../pages/contact.html" class="mx-2 hover:underline">Contact</a>
     </nav>
-    <div class="container">
-      <article class="blog-post">
-        <h2><a href="../blog-posts/post1.html">Day 1: Introduction to the MERN Stack</a>
-        </h2>
-        <p>
-          Welcome to the first day of our 50-day journey to mastering the MERN
-          stack. Today, we will cover the basics of MongoDB, Express.js, React,
-          and Node.js, and how they come together to form a powerful stack for
-          web development...
+    <div class="container mx-auto p-4">
+      <h2 class="text-2xl font-bold mb-4">Blog Posts</h2>
+      <article class="bg-white p-4 rounded shadow mb-4">
+        <h3 class="text-xl font-bold">Day 1: Introduction to the MERN Stack</h3>
+        <p class="mt-2">
+          Welcome to the world of web development where innovation and
+          efficiency converge! Today, let's embark on an exciting journey to
+          explore the MERN stack, a powerful combination of technologies that is
+          transforming the way we build modern web applications. Whether you're
+          a seasoned developer or just starting, understanding the MERN stack
+          can open doors to creating dynamic, full-featured web applications
+          with ease.
         </p>
+        <a
+          href="../blog-posts/post1.html"
+          class="text-blue-500 hover:underline mt-4 block"
+          >Read More</a
+        >
       </article>
-      <!-- <div class="comments">
-        <h3>Comments</h3>
-        <div class="comment">
-          <h3>Jane Doe</h3>
-          <p>This is a great introduction! Looking forward to the next post.</p>
-        </div>
-        <div class="comment">
-          <h3>John Smith</h3>
-          <p>Very informative. Thanks for sharing!</p>
-        </div>
-        Add more comments as needed -->
-      </div>
     </div>
-    <footer>
+    <footer
+      class="bg-gray-800 text-white text-center py-4 fixed bottom-0 w-full"
+    >
       <p>&copy; 2024 MERN50. All rights reserved.</p>
-      <p>This website was built using technologies such as ChatGPT and GitHub Copilot.</p>
+      <p>
+        This website was built using technologies such as ChatGPT and GitHub
+        Copilot.
+      </p>
     </footer>
-    
   </body>
 </html>

@@ -4,40 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact - MERN50: Master the Stack</title>
-    <link rel="stylesheet" href="css/contact.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <header>
-      <h1>Contact MERN50: Master the Stack</h1>
+  <body class="bg-gray-100 text-gray-900">
+    <header class="bg-gray-800 text-white py-4">
+      <h1 class="text-3xl text-center">Contact MERN50: Master the Stack</h1>
     </header>
-    <nav>
-      <a href="../index.html">Home</a>
-      <a href="../pages/about.html">About</a>
-      <a href="../pages/blog.html">Blog</a>
-      <a href="../pages/contact.html">Contact</a>
+    <nav class="bg-gray-700 text-white p-4 text-center">
+      <a href="../index.html" class="mx-2 hover:underline">Home</a>
+      <a href="about.html" class="mx-2 hover:underline">About</a>
+      <a href="blog.html" class="mx-2 hover:underline">Blog</a>
+      <a href="contact.html" class="mx-2 hover:underline">Contact</a>
     </nav>
-    <div class="container">
-      <article>
-        <h2>Contact Us</h2>
-        <p>
+    <div class="container mx-auto p-4">
+      <article class="bg-white p-6 rounded shadow">
+        <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+        <p class="mb-4">
           If you have any questions, comments, or feedback, please feel free to
           reach out. We'd love to hear from you!
         </p>
-        <form action="contact_form_handler.php" method="post">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-
-          <button type="submit">Send Message</button>
+        <form action="contact_form_handler.php" method="post" class="space-y-4">
+          <div>
+            <label for="name" class="block text-lg">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              class="w-full p-2 border rounded"
+            />
+          </div>
+          <div>
+            <label for="email" class="block text-lg">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="w-full p-2 border rounded"
+            />
+          </div>
+          <div>
+            <label for="message" class="block text-lg">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              class="w-full p-2 border rounded"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="bg-gray-800 text-white py-2 px-4 rounded hover:bg-gray-700"
+          >
+            Send Message
+          </button>
         </form>
       </article>
     </div>
-    <footer>
+    <footer
+      class="bg-gray-800 text-white text-center py-4 fixed bottom-0 w-full"
+    >
       <p>&copy; 2024 MERN50. All rights reserved.</p>
       <p>
         This website was built using technologies such as ChatGPT and GitHub
